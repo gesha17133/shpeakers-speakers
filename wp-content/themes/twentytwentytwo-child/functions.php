@@ -137,7 +137,6 @@ function speakers_archive_sidebar() {
 
 }
 add_action( 'widgets_init', 'speakers_archive_sidebar' );
-
 require_once get_stylesheet_directory() . '/widgets/class-archive-widget.php';
 
 
