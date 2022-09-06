@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    //for comfortable pixel perfect
+    overflow-y: overlay;
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+.theme-container{
+    padding: 0 50px;
+    @media screen and (max-width: 768px) {
+        padding: 0 20px;
+    }
+    &.hero{
+        padding: 0;
+    }   
+}

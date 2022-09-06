@@ -1,0 +1,65 @@
+# Author @warg
+# Attention, configure for each project specifically
+
+# Default log files, DB, archives, etc.
+*.log
+*.sql
+*.zip
+*.sqlite
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.
+
+!db.sql
+
+# WP-CLI deploy tool
+deploy/**
+/wp-cli.yml
+
+# Google verification files
+*google*.html
+
+# Development and local specific files and dirs
+logs/
+stats/
+languages/
+.cache/
+.idea/
+.DS_Store
+wp-cli.phar
+**/.vscode/**
+*.map
+# WordPress uploads media files, cache, plugins for staging
+**/uploads-by-proxy/**
+**/query-monitor/**
+**/wc-smooth-generator-master/**
+
+wp-content/cache/**
+wp-content/backups/**
+wp-content/reports/**
+wp-content/uploads/**
+wp-content/upgrade/**
+wp-content/object-cache.php
+wp-content/advanced-cache.php
+backups/**
+
+# CMS configuration files and server
+/wp-config*.php
+/.htaccess
+**/bower_components/**
+**/node_modules/**
+**/wflogs/**
+
+# Useless and secific stuff
+/wp-content/db.php
+/license.txt
+/readme.html
+/sitemap.xml*
+
+!wp-content/plugins/sitepress-multilingual-cms/classes/logs
+wp-cli-login-server
