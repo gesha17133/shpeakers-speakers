@@ -1,0 +1,67 @@
+.speaker-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    justify-content:space-between ;
+    align-items: center;
+}
+.single-speaker{
+    padding: 50px 0;
+}
+.speaker-info__content{
+    max-width: 50%;
+}
+.speaker-info__avatar{
+    max-width: 50%;
+}
+.speaker__sessions{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+        li{
+            margin-top: 30px;
+        }
+    }
+}
+
+.speaker_card{
+    margin: 10px;
+    max-width: 320px;
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+.loop-speakers{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+/*******Widget********/
+.country-terms{
+    display: block;
+}
+.select_filter{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+.speakers-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.speakers-select-label{
+    display: block;
+}
+.archive__widget-area{
+    max-width: 333px;
+    width: 100%;
+}

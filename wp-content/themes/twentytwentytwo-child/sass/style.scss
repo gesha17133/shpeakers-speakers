@@ -1,0 +1,156 @@
+/*
+* Theme Name: Twenty Twenty Child
+* Author: Olexandr Yushkevych
+* Text Domain: twenty-twenty-child
+*/
+/*------------------------------------*/
+
+/*********TYPOGRAPHY*/
+@import './typography.scss';
+/*********LAYOUT*/
+@import './layout.scss';
+@import './header.scss';
+@import './footer.scss';
+/*********speakers*/
+@import './speakers.scss';
+.content-section{
+    margin: 200px 0;
+    @media screen and (max-width: 768px) {
+        margin: 50px 0;
+    }
+}
+.theme-content__left-aligner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.theme-content__thumbnail{
+    max-width: 670px;
+    width: 100%;
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        @media screen and (max-width: 768px) {
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+.theme-content__text{
+    max-width: 500px;
+    padding: 0 130px 40px;
+    @media screen and (max-width: 768px) {
+        padding: 26px 0 30px 0;
+    }
+}
+.theme-content__title{
+    margin-bottom: 28px;
+    margin-top: 32px;
+    @media screen and (max-width: 768px) {
+        margin: 0 0 20px 0;
+    }
+}
+.theme-content__description{
+    margin-bottom: 60px;
+    margin-top: 0;
+    line-height: 25.2px;
+    @media screen and (max-width: 768px) {
+        line-height: 22px;
+        margin-bottom: 60px;
+    }
+}
+.theme-content__cta{
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    padding-left: 55px;
+    z-index: 0;
+    &:before{
+        left: 0;
+        z-index: 5;
+        bottom: -75%;
+        content: url('./assets/img/arrow.png');
+        position: absolute;
+    }
+}
+.theme__hero-banner{
+    padding: 60px 0 432px 0;
+    text-align: center;
+    background-image: url('./assets/img/hero-bg.png'), linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .theme__button{
+        margin: 0 auto;
+    }
+    .hero__description{
+        max-width: 500px;
+        margin: 0 auto 40px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 19px 20px 242px 20px;
+        text-align: left;
+        background-size: 100%;
+        background-image: url('./assets/img/mobile-bg.png'), linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+        .hero__description{
+            max-width: 90%;
+            margin: 0 0 27px;
+            line-height: 22.4px;
+        }   
+    }
+}
+
+.hero__subtitle{
+    margin: 0;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    @media screen and ( max-width: 768px ) {
+        line-height: 28px;
+        letter-spacing: 0.05em;
+    }
+}
+
+.hero__title{
+    margin: 20px 0;
+    line-height: 89.6px;
+    @media screen and (max-width: 768px) {
+        line-height: 67.2px;
+    }
+}
+
+.hero__description{
+    line-height: 25.2px;
+    color: #606060;
+}
+
+.theme__button{
+    max-width: 250px;
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
+    box-sizing: border-box;
+    max-height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px 89px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000000;
+    &.light-button{
+        color: #323232;
+        background: transparent;
+    }
+    &.dark-button{
+        color: #fff;
+        background: #323232;
+        border: 1px solid #323232;
+    }
+}

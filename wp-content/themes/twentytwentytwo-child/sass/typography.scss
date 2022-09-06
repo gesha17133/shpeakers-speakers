@@ -1,0 +1,49 @@
+.text-dark{
+    color: #202020;
+}
+.text-gray{
+    color: #323232;
+}
+.text__lightgray{
+    color: #606060;
+}
+.blue-span{
+    color: #28B7CA;
+}
+
+.text-xs{
+    font-size: 14px;
+}
+.text-s{
+    font-size: 16px;
+    @media screen and ( max-width: 768px ) {
+        font-size: 14px;
+    }
+}
+.text-m{
+    font-size: 18px;
+    @media screen and ( max-width: 768px ) {
+        font-size: 16px;
+    }
+}
+.text-l{
+    font-size: 36px;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+.text-xl{
+    font-size: 64px;
+    @media screen and (max-width: 768px) {
+        font-size: 48px;
+    }
+}
+.text-light{
+    font-weight: 400;
+}
+.text-bold{
+    font-weight: 700;
+}
+.text-super-bold{
+    font-weight: 900;
+}
